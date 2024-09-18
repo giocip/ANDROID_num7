@@ -7,4 +7,4 @@ Create the following soft links to libnum7.so.1.0.0 file :
 
 and copy all 3 files in the following directory:
 
-	user@localhost::/data/data/com.termux/files/usr/lib #GENERAL TERMUX SYSTEM-LIBRARY DIRECTORY 
+	user@localhost:/data/data/com.termux/files/usr/lib #GENERAL TERMUX SYSTEM-LIBRARY DIRECTORY 
