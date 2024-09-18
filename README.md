@@ -29,8 +29,8 @@ for educational school, web e-commerce developing, accounting apps and general m
 	int main() {
 
 		/* ADDITION           */ add("2.5", "3.6").print(" = 2.5 + 3.6 (ADDITION)\n"); 	           //6.1                 
-		/* SUBTRACTION        */ sub("2.5", "3.6").print(" = 2.5 - 3.6 (SUBTRACTION)\n"); 	  	  //-1.1               
-		/* MULTIPLICATION     */ mul("2.5", "3.6").print(" = 2.5 * 3.6 (MULTIPLICATION)\n"); 	   //9.0                 
+		/* SUBTRACTION        */ sub("2.5", "3.6").print(" = 2.5 - 3.6 (SUBTRACTION)\n"); 	  //-1.1               
+		/* MULTIPLICATION     */ mul("2.5", "3.6").print(" = 2.5 * 3.6 (MULTIPLICATION)\n"); 	 //9.0                 
 		/* DIVISION           */ div("2.5", "3.6").print(" = 2.5 / 3.6 (DIVISION)\n"); 	        //0.6944444444444444444
 		/* DIVISION REMAINDER */ mod("11.0", "8.0").print(" = 11 % 8 (DIVISION REMAINDER)\n"); //3.0                 
 		/* INV                */ inv("3.0").print(" = 1 / 3 (INV)\n");  //0.33333333333333333333333333333333                
@@ -40,14 +40,14 @@ for educational school, web e-commerce developing, accounting apps and general m
 		/* POWER OF TEN       */ _10y(6).print(" = 10^6 (TEN POWER)\n");           //1000000.0
 		/* POWER OF TWO       */ _2y(5).print(" = 2^5 (TWO POWER)\n");            //32.0
 		/* POWER OF e         */ _ey(5).round(29).print(" = e^5 (e POWER)\n");   //148.41315910257660342111558004056
-		/* FACTORIAL          */ NUM P(fact(5)); P.print(" = 5! (FACTORIAL)\n"); //120
+		/* FACTORIAL          */ NUM P(fact(5)); P.print(" = 5! (FACTORIAL)\n");//120
 		/* BINARY             */ NUM n1("257.0"); char* ram1 = n1.to_bin(1); print(ram1, " = 257 (BINARY)     \n"); free(ram1); //100000001 = 257 (BINARY)
 		/* HEXADECIMAL        */ NUM n2("257.0"); char* ram2 = n2.to_bin(0); print(ram2, " = 257 (HEXADECIMAL)\n"); free(ram2);//101 = 257 (HEXADECIMAL)
-		/* SQUARE ROOT        */ sqr("2.0").print(" (SQUARE ROOT OF 2)\n"); 	   		//1.414213562         
+		/* SQUARE ROOT        */ sqr("2.0").print(" (SQUARE ROOT OF 2)\n"); 	   		                //1.414213562         
 		/* ROUND 2 DIGITS     */ round(sqr("2.0")).print(" = SQUARE ROOT OF 2 (ROUND 2 DIGITS)\n");            //1.41  
-		/* ROUND 4 DIGITS     */ round(pi(), 4).print(" =~ 3.141592654 (ROUND 4 DIGITS)\n"); 	                //3.1416
+		/* ROUND 4 DIGITS     */ round(pi(), 4).print(" =~ 3.141592654 (ROUND 4 DIGITS)\n"); 	              //3.1416
 		/* ROUND BANKING      */ round_bank(pi(), 7).print(" =~ 3.141592654 (ROUND BANKING 7 DIGITS)\n");    //3.1415926
-		/* ABS                */ Abs("-5.25").print(" (ABSOLUTE VALUE OF -5.25)\n"); 		            	      //5.25 
+		/* ABS                */ Abs("-5.25").print(" (ABSOLUTE VALUE OF -5.25)\n"); 		            //5.25 
 		/* EXP                */ NUM n3("314.0e-2"); n3.print(" = 314.0e-2 (EXP)\n");                      //3.14 = 314.0e-2 (EXP)
 		/* SCIENTIFIC         */ NUM n4("314.0e-2"); into_exp(n4).print(" = 3.14e0 (SCI)\n");             //3.14 = 3.14e0 (SCI)
 		/* pi                 */ pi().print(" (pi)\n"); 						  //3.1415926535897932384626433832795
@@ -60,11 +60,11 @@ for educational school, web e-commerce developing, accounting apps and general m
 		/* DIVIDE FOR 1000    */ _1000div("5.25").print(" (DIVISION FOR THOUSAND OF 5.25)\n");     //0.00525
 		/* PERCENTAGE         */ pct("3.725", "150.00").round(2).print(" = 3.725% OF 150 (PERCENTAGE)\n");        //3.73
 		/* PERTHOUSAND        */ pth("2.00", "20_000.00").round(2).print(" = 2PTH OF 20000 (PERTHOUSAND)\n");    //40.0
-		/* SPIN-OFF           */ spinoff("22.00", "1_299.00").round(2).print(" = (-22%) 1299 (SPIN-OFF)\n"); 	  //1064.75
+		/* SPIN-OFF           */ spinoff("22.00", "1_299.00").round(2).print(" = (-22%) 1299 (SPIN-OFF)\n"); 	//1064.75
 		/* SPIN-ON            */ spinon("22.00", "1_064.75").round(2).print(" = +22% OF 1064.75 (SPIN-ON)\n"); //1299.0
-		print("----------------------\n"); 								    //---------------------- 
+		print("----------------------\n"); 								      //---------------------- 
 		#define ELEMENTS 5
-		int elements = 5; NUM cart[ELEMENTS]; 				  			  //19.31999 19.32 18.37 -15.13 -15.12 => ELEMENTS
+		int elements = 5; NUM cart[ELEMENTS]; //19.31999 19.32 18.37 -15.13 -15.12 => ELEMENTS
 		cart[0] = "19.31999"; cart[1] = "19.32"; cart[2] = "18.37"; cart[3] = "-15.13"; cart[4] = "-15.12"; //
 		for (elements = 0; elements < 5; elements++) print(cart[elements], " "); print("=> ELEMENTS\n");   //
 		/* SUM   */ sum(cart, elements).print(" => SUM\n");            //26.75999 
@@ -101,7 +101,7 @@ for educational school, web e-commerce developing, accounting apps and general m
 	R = a + b - c;                           //INITIALIZATION 
 	print("R = "); print(R, "\n"); //R = 0.0 
 	a = "-3.99"; b = "-5.20"; c = "+3.01"; //INITIALIZATION 
-	R = a - b - c; 			                  //INITIALIZATION 
+	R = a - b - c; 			      //INITIALIZATION 
 	print("R = "); print(R, "\n");       //R = -1.8 
 
 (*) multiplying:  
@@ -113,35 +113,35 @@ for educational school, web e-commerce developing, accounting apps and general m
 (/) dividing:  
 
 	a = "3.0"; b = "5.7"; 		  //INITIALIZATION
-	R = a / b; 			           //INITIALIZATION
-	print("R = "); print(R, "\n"); //R = 0.52631578947368421052631578947368
+	R = a / b; 			 //INITIALIZATION
+	print("R = "); print(R, "\n");  //R = 0.52631578947368421052631578947368
 	print("R = "); print(div(a, b).round(), "\n"); //R = 0.53
 
 (% operator) integer division and floating-point remainder:  
 
-	a = 2564; b = 17; 		           //INITIALIZATION 
+	a = 2564; b = 17; 		 //INITIALIZATION 
 	NUM quotient((a / b).trunk(0)); //DECLARATION AND INITIALIZATION 
 	NUM remainder(a % b); 	       //DECLARATION AND INITIALIZATION 
 	print("quotient = ");  quotient.print("\n");  	       //quotient = 150.0 
 	print("INTEGER remainder = "); remainder.print("\n"); //INTEGER remainder = 14.0 
-	a = "3.141592654"; b = 2;  			                     //INITIALIZATION
+	a = "3.141592654"; b = 2;  			     //INITIALIZATION
 	quotient = (a / b).trunk(0); remainder = a % b; 
-	print("quotient = ");  quotient.print("\n"); 		    //quotient = 1.0 
+	print("quotient = ");  quotient.print("\n");       //quotient = 1.0 
 	print("FLOATING-POINT Remainder = "); remainder.print("\n");//FLOATING-POINT Remainder = 1.141592654 
 
 (sqrt) square root function:  
 
-	NUM a("123_456_789.1234567891");   //DECLARATION AND INITIALIZATION 
+	NUM a("123_456_789.1234567891");     //DECLARATION AND INITIALIZATION 
 	NUM root = a.sqrt(); 	            //DECLARATION AND INITIALIZATION 
 	print("root = ", root, "\n");	   //root = 11111.111066
 
 (^) power operator and pow function:  
 
-	NUM a("3.14"), b(2);				             //DECLARATION AND INITIALIZATION 
-	NUM power = a.pow(9); 				          //DECLARATION AND INITIALIZATION 
-	print("power = ", power, "\n"); 		   //power = 29673.367320587092457984 
-	power = (b ^ 32); 				  //INITIALIZATION (power needs priority)
-	print("power = ", power, "\n"); 		 //power = 4294967296.0 
+	NUM a("3.14"), b(2);			 //DECLARATION AND INITIALIZATION 
+	NUM power = a.pow(9); 			//DECLARATION AND INITIALIZATION 
+	print("power = ", power, "\n");        //power = 29673.367320587092457984 
+	power = (b ^ 32); 		      //INITIALIZATION (power needs priority)
+	print("power = ", power, "\n");      //power = 4294967296.0 
 	print("power = ", pow(a, b), "\n"); //power = 9.8596 
 
 logic (<, <=, >, >=, !=, ==) and relational operators (&&, ||, !).  
@@ -162,11 +162,11 @@ logic (<, <=, >, >=, !=, ==) and relational operators (&&, ||, !).
 	print(a > b, " "); print(a > c, " "); print(b > c, "\n");     //0 1 1 (False True  True)
 	print(a >= a, " "); print(a >= c, " "); print(b >= c, "\n"); //1 1 1 (True  True  True)
 	print(c == -2 * b, " "); print(a == c + 2 * b, " "); print(a != a + b + c, "\n"); //1 1 1 (True  True  True)
-	print(a && b, " "); print(a || b, " "); print(!a, "\n");	 //0 1 1 (False  True True) 
+	print(a && b, " "); print(a || b, " "); print(!a, "\n");   //0 1 1 (False  True True) 
 
 (+ - unary operators):
   
-	NUM a, b; //DECLARATION 
+	NUM a, b;                  //DECLARATION 
 	a = "-10.0", b = "+10.1"; //INITIALIZATION  
 	char* p = a.format(); 
 	print("a = ", p); free(p);              
@@ -177,14 +177,14 @@ On a given NUM variable the following arithmetic methods are available.
 
 variable arithmetic:
 
-	NUM a("10.25"); 		            //DECLARATION AND INITIALIZATION
-	print(a, "\n"); 		           //10.25
+	NUM a("10.25"); 		      //DECLARATION AND INITIALIZATION
+	print(a, "\n"); 		     //10.25
 	print(a.inc(1), "\n"); 		    //11.25
 	print(a.dec(2), "\n");		   //9.25
-	print(a.dec("4.25"), "\n");	//5.0
+	print(a.dec("4.25"), "\n");	  //5.0
 	print(a, "\n");			 //5.0
 	print(a = a.mul("5.01"), "\n"); //25.05
-	print(a, "\n");		             //25.05
+	print(a, "\n");		       //25.05
 	print(a.clear(), "\n");	      //0.0
 	print("----------------------\n"); //----------------------
 	
@@ -247,7 +247,7 @@ LOOP EXAMPLE:
 
 ROUNDING AND ACCOUNTING:
 
-	NUM p("11.19"), discountRate("7.00"); //DECLARATION AND INITIALIZATION - PRICE -Toslink cable for soundbar  
+	NUM p("11.19"), discountRate("7.00");       //DECLARATION AND INITIALIZATION - PRICE -Toslink cable for soundbar  
 	print("price=", p); 
 	NUM d = round(p.pct(discountRate));       //DISCOUNT 
 	NUM pd = round(p - d);                   //PRICE DISCOUNTED 7%  
@@ -360,7 +360,7 @@ ARBITRARY PRECISION ARITHMETIC:
 
 SCIENTIFIC NOTATION AND HIGH PRECISION RESULTS:
 
-	NUM a("1.23456789"), //STANDARD NUMERIC NOTATION 
+	NUM a("1.23456789"),     //STANDARD NUMERIC NOTATION 
 		b("9.87654321"),							 
 		MUL(a * b);    //MULTIPLICATION 
 	double ieee754 = 1.23456789 * 9.87654321; 
@@ -369,7 +369,7 @@ SCIENTIFIC NOTATION AND HIGH PRECISION RESULTS:
 	print(MUL, " => MUL num7.h  - PRECISION SUCCESS\n"); //12.1932631112635269 => MUL num7.h  - PRECISION SUCCESS 
 	print("-----------------------------------------\n"); 
 
-	a = "1.23456789e300"; //SCIENTIFIC NUMERIC NOTATION 
+	a = "1.23456789e300";                        //SCIENTIFIC NUMERIC NOTATION 
 	b = "9.87654321e300"; 
 	ieee754 = 1.23456789e300 * 9.87654321e300; //MULTIPLICATION 
 	print(from_double(ieee754), "			=> MUL ieee754 - CAPACITY FAILURE\n"); 
@@ -411,18 +411,18 @@ double TO NUM CONVERSION ARRAY:
 		clock_t tic = clock(), toc = tic;
 		tic = clock();
 
-		NUM base = "3", h = "4";                                  //SYNTAX ERROR, RIGHT-ANGLE TRIANGLE BASE AND HEIGHT (ERROR ARGUMENT VALUE => NUM CONSTRUCTOR: [3])
+		NUM base = "3", h = "4";                                 //SYNTAX ERROR, RIGHT-ANGLE TRIANGLE BASE AND HEIGHT (ERROR ARGUMENT VALUE => NUM CONSTRUCTOR: [3])
 		if (error()) {                                          //DETECT ERRORs (ERROR ARGUMENT VALUE => NUM CONSTRUCTOR: [4])
 			print("INITIALIZATION VARIABLEs ERROR\n");
-			base = "3.0"; h = "4.0";			                      //SYNTAX OK
-			error_clear();                                     //CLEAR ERROR
+			base = "3.0"; h = "4.0";		      //SYNTAX OK
+			error_clear();                               //CLEAR ERROR
 		}
-		NUM b2, h2;					                                //TEMPORARY VARIABLES
+		NUM b2, h2;					    //TEMPORARY VARIABLES
 		print("base = ", base, "  h = "); print(h, "\n");  //base = 3.0  h = 4.0
 		NUM hyp = sqr((b2 = base.x2()) + (h2 = h.x2()));  //PYTHAGOREAN EXPRESSION NEEDS OF TEMPORARY VARs
-		print("HYPOTENUSE = "); hyp.print("\n");	       //HYPOTENUSE = 5.0
-		NUM AREA = base * h / 2;			                  //AREA EXPRESSION
-		print("AREA = "); AREA.print("\n");	           //AREA = 6
+		print("HYPOTENUSE = "); hyp.print("\n");	 //HYPOTENUSE = 5.0
+		NUM AREA = base * h / 2;			//AREA EXPRESSION
+		print("AREA = "); AREA.print("\n");	       //AREA = 6
 		print("---------------------\n");
 
 		toc = clock();
@@ -493,17 +493,17 @@ A. num7 library supports hi-level execution workflow code for arithmetic operati
 		NUM a("3.6"), b("0.00");
 		print(a, " / "); print(b, " = ");
 		NUM c(a / b); //ERROR DIVISION BY ZERO => operator/: [S=0 CE=0.0e0 C=0.0 E=0 len_I=1 len_F=1]
-		while (error()) {		                        //!!! EXCEPTION HANDLER !!!
+		while (error()) {		                  //!!! EXCEPTION HANDLER !!!
 			static int err_count = 1;                //DECLARATION AND INITALIZATION
-			error_clear(); 			                    //CLEAR ERROR (Error = 0) => GLOBAL VARIABLE
+			error_clear(); 			        //CLEAR ERROR (Error = 0) => GLOBAL VARIABLE
 			if (err_count == 1) b = "0.00";        //ZERO DIVISON AGAIN (NOT VALID DIVISOR)
-			else b = "0.16";			                //VALID DIVISOR
+			else b = "0.16";		      //VALID DIVISOR
 			print(a, " / "); print(b, " = ");
 			c = a / b;
 			if (err_count > 2) { print("SYSTEM RESET\n"); break; } //3 TIMES RETRIES AT ALL
 			err_count++;
 		}
-		if (!error()) print(c, "\n"); 			                  //3.6 / 0.16 = 22.5 //OK
+		if (!error()) print(c, "\n"); 			            //3.6 / 0.16 = 22.5 //OK
 		else { print("SYSTEM RESET -EXIT\n"); return 1; }
 		print("---------------------\n");
 
