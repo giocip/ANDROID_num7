@@ -2,7 +2,7 @@
 
 /**
  * @file   num7.h
- * @author giocip
+ * @author Giovanni Cipriani <giocip7@gmail.com>
  * @date   2024
  * @brief  num7 ISO C++14 Standard 64-BIT LIBRARY, ARBITRARY-PRECISION GENERAL PURPOSE ARITHMETIC-LOGIC DECIMAL CLASS FOR ANDROID ARCHITECTURE
  *
