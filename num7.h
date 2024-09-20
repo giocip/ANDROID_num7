@@ -1,12 +1,12 @@
-/** DEVELOPED ON CPU Kirin 650, RAM 3.0 GB, ANDROID 7.0 KERNEL 4.1.18-g82549c5 CST 2020 AND TERMUX ENVIRONMENT */
+/** DEVELOPED ON AMD Ryzen 5 Mobile 3550H 16GB DDR4 DRAM AND LINUX KERNEL 6 */
 
 /**
  * @file   num7.h
  * @author Giovanni Cipriani <giocip7@gmail.com>
  * @date   2024
- * @brief  num7 ISO C++14 Standard 64-BIT LIBRARY, ARBITRARY-PRECISION GENERAL PURPOSE ARITHMETIC-LOGIC DECIMAL CLASS FOR ANDROID ARCHITECTURE
+ * @brief  num7 ISO C++14 Standard 64-BIT LIBRARY, ARBITRARY-PRECISION GENERAL PURPOSE ARITHMETIC-LOGIC DECIMAL CLASS FOR AMD64 ARCHITECTURE
  *
- * @see https://github.com/giocip/ANDROID_num7
+ * @see https://github.com/giocip/LINUX_num7
  */
 
 #ifndef num7_h
@@ -24,10 +24,18 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     //COMMON DATA TYPE
     class NUM;
     static int Error = 0; //ERROR HANDLING
-    typedef  int32_t i32;
-    typedef uint32_t I32;
-    typedef  int64_t i64;
-    typedef uint64_t I64;
+    
+    //typedef  int32_t i32;
+    typedef signed int i32;
+    
+    //typedef uint32_t I32;
+    typedef unsigned int I32;
+
+    //typedef  int64_t i64;
+    typedef  signed long int i64; 
+    
+    //typedef uint64_t I64;
+    typedef unsigned long int I64;
 
     struct Division {
         char* quotient;
@@ -259,11 +267,11 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     NUM& Abs(i64);
     NUM& pi();
     NUM& e();
-    NUM& spinoff(NUM&, NUM&);                      
+    NUM& spinoff(NUM&, NUM&);
     NUM& spinoff(const char*, const char* all = "1.0");  //DEFAULT all = "1.0"
     NUM& spinoff(string, string all = "1.0");           //DEFAULT all = "1.0"
     NUM& spinoff(i64, i64 all = 1);                    //DEFAULT all = 1
-    NUM& spinon(NUM&, NUM&);                              
+    NUM& spinon(NUM&, NUM&);
     NUM& spinon(const char*, const char* all = "1.0");  //DEFAULT all = "1.0"
     NUM& spinon(string, string all = "1.0");           //DEFAULT all = "1.0"
     NUM& spinon(i64, i64 all = 1);                    //DEFAULT all = 1
@@ -321,7 +329,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     char* dec2hex(const char*, int bin = 0);
     NUM* address(NUM&);
     NUM* id(NUM&);
-    NUM& pct(NUM&, NUM&);                             
+    NUM& pct(NUM&, NUM&);
     NUM& pct(const char*, const char* all = "1.0"); //DEFAULT all = "1.0"
     NUM& pct(string, string all = "1.0");          //DEFAULT all = "1.0"
     NUM& pct(i64, i64 all = 1);                   //DEFAULT all = 1
@@ -329,11 +337,11 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     NUM& all(const char*, const char*);
     NUM& all(string, string);
     NUM& all(i64, i64);
-    NUM& rate(NUM&, NUM&);                            
+    NUM& rate(NUM&, NUM&);
     NUM& rate(const char*, const char* all = "1.0"); //DEFAULT all = "1.0"
     NUM& rate(string, string all = "1.0");          //DEFAULT all = "1.0"
     NUM& rate(i64, i64 all = 1);                   //DEFAULT all = 1
-    NUM& pth(NUM&, NUM&);                            
+    NUM& pth(NUM&, NUM&);
     NUM& pth(const char*, const char* all = "1.0"); //DEFAULT all = "1.0"
     NUM& pth(string, string all = "1.0");          //DEFAULT all = "1.0"
     NUM& pth(i64, i64 all = 1);                   //DEFAULT all = 1
@@ -341,7 +349,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     NUM& all_th(const char*, const char*);
     NUM& all_th(string, string);
     NUM& all_th(i64, i64);
-    NUM& rate_th(NUM&, NUM&);                         
+    NUM& rate_th(NUM&, NUM&);
     NUM& rate_th(const char*, const char* all = "1.0"); //DEFAULT all = "1.0"
     NUM& rate_th(string, string all = "1.0");          //DEFAULT all = "1.0"
     NUM& rate_th(i64, i64 all = 1);                   //DEFAULT all = 1
@@ -1060,5 +1068,4 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
 
 ///////////////////////////////////////// END-FILE      /////////////////////////////////////////
 #endif // num7_h
-
 

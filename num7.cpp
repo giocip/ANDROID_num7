@@ -1,12 +1,12 @@
-/** DEVELOPED ON CPU Kirin 650, RAM 3.0 GB, ANDROID 7.0 KERNEL 4.1.18-g82549c5 CST 2020 AND TERMUX ENVIRONMENT */
+/** DEVELOPED ON AMD Ryzen 5 Mobile 3550H 16GB DDR4 DRAM AND LINUX KERNEL 6 */
 
 /**
  * @file   num7.cpp
  * @author Giovanni Cipriani <giocip7@gmail.com>
  * @date   2024
- * @brief  num7 ISO C++14 Standard 64-BIT LIBRARY, ARBITRARY-PRECISION GENERAL PURPOSE ARITHMETIC-LOGIC DECIMAL CLASS FOR ANDROID ARCHITECTURE
+ * @brief  num7 ISO C++14 Standard 64-BIT LIBRARY, ARBITRARY-PRECISION GENERAL PURPOSE ARITHMETIC-LOGIC DECIMAL CLASS FOR AMD64 ARCHITECTURE
  *
- * @see https://github.com/giocip/ANDROID_num7
+ * @see https://github.com/giocip/LINUX_num7
  */
 
 #include "num7.h"
@@ -5024,7 +5024,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         return A = "2.7182818284590452353602874713527";
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: SPIN-OFF VALUE => CODE: NUM price("54.58"); NUM rate("22.00"); spinoff(rate, price).round().print("\n"); //44.74
-    NUM& spinoff(NUM& rate, NUM& all) { 
+    NUM& spinoff(NUM& rate, NUM& all) {
         return all / (1 + rate.xe10(-2));
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: SPIN-OFF VALUE => CODE: spinoff("22.00", "54.58").round().print("\n"); //44.74
@@ -5043,7 +5043,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         return all / (1 + rate.shift(-2));
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: SPIN-ON VALUE => CODE: NUM factory_price("44.74"); NUM rate("22.00"); spinon(rate, factory_price).round().print("\n"); //54.58
-    NUM& spinon(NUM& rate, NUM& all) { 
+    NUM& spinon(NUM& rate, NUM& all) {
         return all * (1 + rate.xe10(-2));
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: SPIN-ON VALUE => CODE: spinon("22.00", "44.74").round().print("\n"); //54.58
@@ -5738,7 +5738,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         return &a;
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: PERCENTAGE VALUE => CODE: NUM discount("10.00"), mac_air_M2_512K("1_648.98"); pct(discount, mac_air_M2_512K).round().print(" => DISCOUNT\n"); //164.9 => DISCOUNT
-    NUM& pct(NUM& rate, NUM& all) { 
+    NUM& pct(NUM& rate, NUM& all) {
         return all.shift(-2) * rate;
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: PERCENTAGE VALUE => CODE: pct("10.00", "1_648.98").round().print(" => DISCOUNT\n"); //164.9 => DISCOUNT
@@ -5776,7 +5776,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         return pct.shift(2) / rate;
     }
     /// NUM OUT-LINE /// WITH THE ALL, RETURN THE RATE OF SPECIFIED PERCENTAGE, CODE: NUM pct(20), ALL("1_000.0"); rate(pct, ALL).print("\n"); //2.0
-    NUM& rate(NUM& pct, NUM& all) { 
+    NUM& rate(NUM& pct, NUM& all) {
         return pct.xe10(2) / all;
     }
     /// NUM OUT-LINE /// WITH THE ALL, RETURN THE RATE OF SPECIFIED PERCENTAGE, CODE: rate("20.0", "1000.0").print("\n"); //2.0
@@ -5795,7 +5795,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         return PCT.shift(2) / all;
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: PERTHOUSAND VALUE => CODE: NUM revenue("20_000.00"), rate("2.0"); pth(rate, revenue).print(" => church_fees\n"); //40.0 => church_fees
-    NUM& pth(NUM& rate, NUM& all) { 
+    NUM& pth(NUM& rate, NUM& all) {
         return all.pth(rate);
     }
     /// NUM OUT-LINE /// CALCULATOR MODE: PERTHOUSAND VALUE => CODE: pth("2.0", "20_000.00").print(" => church_fees\n"); //40.0 => church_fees
@@ -5814,7 +5814,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         return ALL.pth(rate);
     }
     /// NUM OUT-LINE /// WITH THE ALL, RETURN THE RATE_TH OF SPECIFIED PERTHOUSAND, CODE: NUM pth(20), ALL("10_000.0"); rate_th(pth, ALL).print("\n"); //2.0
-    NUM& rate_th(NUM& pth, NUM& all) { 
+    NUM& rate_th(NUM& pth, NUM& all) {
         return pth.xe10(3) / all;
     }
     /// NUM OUT-LINE /// WITH THE ALL, RETURN THE RATE_TH OF SPECIFIED PERTHOUSAND, CODE: rate_th("20.0", "10_000.0").print("\n"); //2.0
