@@ -1380,9 +1380,10 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         char* SN = (char*)malloc(((i64)strlen(sn) + W + 4) * sizeof(char)); //RAM DYNAMIC ALLOCATION
         if (!SN) raise_exit("OUT OF RAM MEMORY => root_i", this->sprint_fields());
         rm_c(sn, '.');      //REMOVE DOT CHARACTER (.)
-        strcpy(SN, sn); free(sn);
+        strcpy(SN, sn); //free(sn);
         if (W >= 0) { pad = strpads0(W); strcat(SN, pad); free(pad); }
         else SN[(i64)strlen(sn) + W] = '\0'; //FIXING STRING 
+        free(sn);
         strcat(SN, ".0");
         z = n = SN; free(SN);
         s = z + 1;
