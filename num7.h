@@ -37,9 +37,9 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     ////////////////////// OPERATOR  FUNCTIONS  ///////////////////////////
     ostream& operator<<(ostream&, NUM);
     istream& operator>>(istream&, NUM&);
-    NUM& operator+(i64, NUM& b);
-    NUM& operator+(const char* a, NUM& b);
-    NUM& operator+(string a, NUM& b);
+    NUM& operator+(i64, NUM&);
+    NUM& operator+(const char*, NUM&);
+    NUM& operator+(string, NUM&);
     NUM& operator-(i64, NUM&);
     NUM& operator-(const char*, NUM&);
     NUM& operator-(string, NUM&);
@@ -138,7 +138,7 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     int le(NUM*, NUM*);
     int lt(NUM*, NUM*);
     NUM& mulf(NUM*, NUM*);
-    NUM& mulf_signed(NUM* op1, NUM* op2);
+    NUM& mulf_signed(NUM*, NUM*);
     int ne(NUM*, NUM*);
     int not_(NUM*);
     NUM& POW(NUM&, i64);
@@ -237,11 +237,11 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     NUM& x3(i64);
     NUM& shift(NUM&, NUM&);
     NUM& shift(NUM&, const char*);
-    NUM& shift(NUM&, string e);
+    NUM& shift(NUM&, string);
     NUM& shift(NUM&, i64);
     NUM& xe10(NUM&, NUM&);
     NUM& xe10(NUM&, const char*);
-    NUM& xe10(NUM&, string e);
+    NUM& xe10(NUM&, string);
     NUM& xe10(NUM&, i64);
     NUM& _2x(NUM&);
     NUM& _2x(const char*);
@@ -272,14 +272,14 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
     NUM& perf(NUM v_init, NUM v_end, i64 time = 1);
     NUM& fact(i64);
     i64 fact_digits(i64);
-    char* FACT(i64 N);
+    char* FACT(i64);
     char* sprint_fields(NUM&);
     int print_fields(NUM&);
     int print_exp(NUM, const char* postfix = "");
     int print(NUM&, const char* postfix = "", int SIGN = 0);
     int print(const char*, NUM&, const char* postfix = "", int SIGN = 0);
     int print(const char*, const char* inter = "", const char* postfix = "");
-    int print(string prefix, const char* inter = "", const char* postfix = "");
+    int print(string, const char* inter = "", const char* postfix = "");
     int print(int, const char* postfix = "");
     int print(I32 a, const char* postfix = "");
     int print(i64 a, const char* postfix = "");
