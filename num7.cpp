@@ -2306,14 +2306,14 @@ namespace num7 {          // STARTING CURLY BRACKET num7 namespace
         return s;
     }
     /// NUM OUT-LINE /// CONVERT I32 TYPE TO UNSIGNED INTEGER STRING, CODE: I32 n = 4294967295; const char *ns = I32str(n); print(ns, "\n"); //4294967295
-    const char* I32str(I32 num, int base) { //DEFAULT ARGS: (int base = 10)
+    const char* I32str(I32 num) { 
         static char buf[40];
         sprintf(buf, "%u", num);
         return buf;
         //return _ultoa(num, buf, base); //RETURN ONLY POSITIVE WITHOUT SIGN (sizeof(long int) = 4)
     }
     /// NUM OUT-LINE /// CONVERT i32 TYPE TO SIGNED INTEGER STRING, CODE: i32 n = -20000; const char* ns = i32str(n); print(ns, "\n"); //-20000
-    const char* i32str(i32 num, int base) {  //DEFAULT ARGS: (int base = 10)
+    const char* i32str(i32 num) {  
         static char buf[40];
         sprintf(buf, "%d", num);
         return buf;
